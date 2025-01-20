@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+  <title> {{page.title}} | Pajurama Kreativagentur </title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+  <link href="style.css" rel="stylesheet" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Adobe Font  -->
+	<link rel="stylesheet" href="https://use.typekit.net/fbx4efv.css">
+
+	<!-- Google Font  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper/css/effect-fade.min.css"
+/>
+
+</head>
+<body>
+
+{{content}}
+
+<!-- - - - Section #8 - - - - - - - - -->
+<section id="section8" class="featured centered">
+
+	<p><strong>Gültigkeit der Offerte</strong>: Bis 28. Februar 2025</p>
+
+	<p>Wir würden uns riesig freuen, diesen Auftrag für euch auszuführen.</p>
+	
+	<p>Herzliche Grüsse</p>
+	
+	<p>Pajurama Kreativagentur<br>
+	Pascal Morgenthaler & Juliana Schuler</p>
+	<br>
+    <a href="mailto:creative@pajurama.com" target="_blank"> creative@pajurama.com</a></p>
+</section>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha256-RdH19s+RN0bEXdaXsajztxnALYs/Z43H/Cdm1U4ar24=" crossorigin="anonymous" />
+
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" integrity="sha256-wk7QMTzYE7BJvko9BsywPzRmKzhCtIQKTuN6/B9sRmw=" crossorigin="anonymous"></script>
+
+<!-- Custom JS -->
+<script>
+
+$(document).ready(function() {
+	$('.popup-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			titleSrc: function(item) {
+				return item.el.attr('title');
+			}
+		}
+	});
+});
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/swiper-portfolio.js"></script>
+<script src="/swiper-website-portfolio.js"></script>
+<script src="/swiper-onlineshop-portfolio.js"></script>
+
+
+</body>
+
+</html>
